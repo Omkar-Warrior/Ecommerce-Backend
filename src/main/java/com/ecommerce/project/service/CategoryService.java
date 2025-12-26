@@ -2,15 +2,12 @@ package com.ecommerce.project.service;
 
 import com.ecommerce.project.dto.CategoryDto;
 import com.ecommerce.project.dto.CategoryResponse;
-import com.ecommerce.project.model.Category;
-import org.springframework.stereotype.Service;
 
-import java.util.List;
 
 public interface CategoryService {
 
 
-    CategoryResponse getAllCategories();
+    CategoryResponse getAllCategories(Integer pageNumber,Integer pageSize, String sortBy, String sortOrder);
 
     CategoryDto createCategory(CategoryDto categoryDto);
 
